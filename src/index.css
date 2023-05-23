@@ -1,13 +1,111 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 5px;
+  margin: 2px;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: whitesmoke;
+}
+/* .app-container {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.app-title {
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.25),
+    -14px -14px 10px 0 rgb(255, 255, 255);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+input {
+  background: whitesmoke;
+  width: 300px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  padding: 10px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.25),
+    -14px -14px 10px 0 rgb(255, 255, 255);
+}
+
+.meals-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-container {
+  flex: 1 0 20%;
+  /* border: 1px solid rgb(199, 199, 199); */
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.25),
+    -14px -14px 10px 0 rgb(255, 255, 255);
+  padding-bottom: 10px;
+  margin: 10px;
+}
+.instructions {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+  padding-bottom: 2px;
+  position: relative;
+}
+
+.instructions::after {
+  content: ''; /* Creates a pseudo-element */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    white
+  );  */
+  /* Adds a gradient overlay */
+  pointer-events: none; /* Allows pointer events to pass through */
+}
+
+.instructions:hover {
+  height: auto; /* Expand to show full content on hover */
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+.instructions::-webkit-scrollbar {
+  width: 0; /* Adjust the width as needed */
+}
+
+.instructions::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+.instructions::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3); /* Color of the thumb */
+}
+
+.instructions::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5); /* Color of the thumb on hover */
+}
+
+.origin {
+  margin-bottom: 20px;
+}
+
+img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 1500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.364);
 }
